@@ -1,47 +1,36 @@
 # ==============================================================================
 fastqs:
-  4MOSC1BloodCD8-1_S16:
-    -
-  4MOSC1BloodCD8-2_S17:
-    -
-  4MOSC1BloodCD8-3_S18:
-    -
-  4MOSC1TumorCD8-1_S4:
-    -
-  4MOSC1TumorCD8-2_S5:
-    -
-  4MOSC1TumorCD8-3_S6:
-    -
-  4MOSC3BloodCD8-1_S13:
-    -
-  4MOSC3BloodCD8-2_S1:
-    -
-  4MOSC3BloodCD8-3_S15:
-    -
-  4MOSC3TumorCD8-1_S1:
-    -
-  4MOSC3TumorCD8-2_S2:
-    -
-  4MOSC3TumorCD8-3_S3:
-    -
 
 # ==============================================================================
-reference_cdna_fasta_file_path:                   ../data/TODO.cdna.all.fa.gz
-enst_gene_name_file_path:                         ../data/enst_gene_name.mouse.tsv
-gene_set_directory_path:                          ../data/gene_set
+reference_cdna_fasta_file_path:
+enst_gene_name_file_path:
 
 # ==============================================================================
-output_directory_path:                            ../output
+gene_set_file_paths:
+  - ../data/gene_set/c1.all.v6.2.symbols.gmt
+  - ../data/gene_set/c2.all.v6.2.symbols.gmt
+  - ../data/gene_set/c3.all.v6.2.symbols.gmt
+  - ../data/gene_set/c5.all.v6.2.symbols.gmt
+  - ../data/gene_set/c6.all.v6.2.symbols.gmt
+  - ../data/gene_set/c7.all.v6.2.symbols.gmt
+  - ../data/gene_set/h.all.v6.2.symbols.gmt
+  - ../data/gene_set/hippo_pathway.gmt
+  - ../data/gene_set/ipa_regulator.gmt
+  - ../data/gene_set/stem_cell.gmt
+  - ../data/gene_set/yap_signature.gmt
 
 # ==============================================================================
-plot_heat_map_max_size:                           240000
-plot_distributions_max_size:                      24000
-plot_rug_max_size:                                2400
-plot_cluster_max_size:                            2400
-plot_std:                                         2.4
+output_directory_path:                            /home/kwatme/metformin
 
 # ==============================================================================
-n_job:                                            1
+plot_heat_map_max_size:                           640000
+plot_distributions_max_size:                      64000
+plot_rug_max_size:                                6400
+plot_cluster_max_size:                            1600
+plot_std:                                         3.2
+
+# ==============================================================================
+n_job:                                            6
 
 # ==============================================================================
 features_to_drop:
@@ -50,8 +39,8 @@ nanize:
 drop_axis:
 max_na: 
 min_n_not_na_unique_value:
-shift_as_necessary_to_achieve_min_before_logging: 0<
-log_base:                                         2
+shift_as_necessary_to_achieve_min_before_logging:
+log_base:
 normalization_axis:
 normalization_method:
 clip_min:
@@ -59,36 +48,49 @@ clip_max:
 
 # ==============================================================================
 genes_to_peek:
-  - CD4
-  - CD8A
-  - CD8B1
-  - F2RL1
-  - ST14
-
+  - ALDH18A1
+  - BRD4
+  - CAD
+  - CIT
+  - CLK1
+  - COASY
+  - DGKA
+  - DGKG
+  - DGKZ
+  - DTYMK
+  - FN3K
+  - FXN
+  - GALK2
+  - GK
+  - GK2
+  - GUCY2D
+  - HK3
+  - IDNK
+  - MTOR
+  - MVK
+  - NADK
+  - NME4
+  - PDXK
+  - PI4KA
+  - PI4KB
+  - PIK3CA
+  - PIKFYVE
+  - PKD1
+  - PKM
+  - PMVK
+  - PRPS1
+  - RFK
+  - SEPHS2
+  - SGK3
+  - SPHK1
+  - TRPM7
+  - UCKL1
+  
 # ==============================================================================
 gene_sets_to_peek:
-  - HALLMARK_INFLAMMATORY_RESPONSE
-  - Cancer Stem Cell
-  - BENPORATH_ES_CORE_NINE
-  - BENPORATH_ES_WITH_H3K27ME3
-  - HOEBEKE_LYMPHOID_STEM_CELL_UP
-  - IVANOVA_HEMATOPOIESIS_STEM_CELL_AND_PROGENITOR
-  - MIKKELSEN_IPS_LCP_WITH_H3K4ME3
-  - MIKKELSEN_IPS_WITH_HCP_H3K27ME3
-  - GOTZMANN_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_UP
-  - HALLMARK_NOTCH_SIGNALING
-  - HALLMARK_TGF_BETA_SIGNALING
-  - HALLMARK_E2F_TARGETS
-  - HALLMARK_WNT_BETA_CATENIN_SIGNALING
-  - BIOCARTA_WNT_PATHWAY
-  - PRC2_EZH2_UP.V1_UP
-  - E2F3_UP.V1_UP
-  - HINATA_NFKB_TARGETS_KERATINOCYTE_UP
-  - TIAN_TNF_SIGNALING_VIA_NFKB
-  - RODRIGUES_THYROID_CARCINOMA_POORLY_DIFFERENTIATED_UP
-  - RODRIGUES_THYROID_CARCINOMA_POORLY_DIFFERENTIATED_DN
-  - MA_MYELOID_DIFFERENTIATION_UP
-  - ADDYA_ERYTHROID_DIFFERENTIATION_BY_HEMIN
+  - HALLMARK_ANGIOGENESIS
+  - HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION
+  - HALLMARK_TNFA_SIGNALING_VIA_NFKB
 
 # ==============================================================================
 n_extreme:                                        32

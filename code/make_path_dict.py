@@ -35,9 +35,4 @@ def make_path_dict(setting):
 
         establish_path(path, path_type)
 
-    path_dict["gene_set_file_paths"] = tuple(
-        "{}/{}".format(setting["gene_set_directory_path"], name)
-        for name in sorted(listdir(setting["gene_set_directory_path"]))
-    )
-
     return path_dict
