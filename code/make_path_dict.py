@@ -10,15 +10,16 @@ def make_path_dict(setting):
     for name in (
         "kallisto/",
         "enst_x_sample.tsv",
-        "gene_x_sample.processed.tsv",
+        "gene_x_sample.tsv",
         "target_x_sample.tsv",
-        "differentially_expressed_gene/",
+        "find_differentially_expressed_gene/",
+        "gene_set_x_information.tsv",
+        "gsea/",
         "gene_set_x_sample.tsv",
-        "differentially_expressed_gene_set/",
-        "hill_plot/",
-        "expanded_gene_set/",
-        "summary/",
-        "mountain_plot/",
+        "find_differentially_expressed_gene_set/",
+        "compare_differentially_expressed_gene_set/",
+        "expand_gene_set/",
+        "summarize/",
     ):
 
         path_dict[name] = "{}/{}".format(setting["output_directory_path"], name)

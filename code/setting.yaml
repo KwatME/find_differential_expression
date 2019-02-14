@@ -1,36 +1,12 @@
 # ==============================================================================
-fastqs:
+output_directory_path:                            /home/kwatme/metformin/output
+
+# ==============================================================================
+fastq_id_fastq_file_paths:
 
 # ==============================================================================
 reference_cdna_fasta_file_path:
 enst_gene_name_file_path:
-
-# ==============================================================================
-gene_set_file_paths:
-  - ../data/gene_set/c1.all.v6.2.symbols.gmt
-  - ../data/gene_set/c2.all.v6.2.symbols.gmt
-  - ../data/gene_set/c3.all.v6.2.symbols.gmt
-  - ../data/gene_set/c5.all.v6.2.symbols.gmt
-  - ../data/gene_set/c6.all.v6.2.symbols.gmt
-  - ../data/gene_set/c7.all.v6.2.symbols.gmt
-  - ../data/gene_set/h.all.v6.2.symbols.gmt
-  - ../data/gene_set/hippo_pathway.gmt
-  - ../data/gene_set/ipa_regulator.gmt
-  - ../data/gene_set/stem_cell.gmt
-  - ../data/gene_set/yap_signature.gmt
-
-# ==============================================================================
-output_directory_path:                            /home/kwatme/metformin
-
-# ==============================================================================
-plot_heat_map_max_size:                           640000
-plot_distributions_max_size:                      64000
-plot_rug_max_size:                                6400
-plot_cluster_max_size:                            1600
-plot_std:                                         3.2
-
-# ==============================================================================
-n_job:                                            6
 
 # ==============================================================================
 features_to_drop:
@@ -45,6 +21,26 @@ normalization_axis:
 normalization_method:
 clip_min:
 clip_max:
+
+# ==============================================================================
+plot_heat_map_max_size:                           640000
+plot_distributions_max_size:                      64000
+plot_rug_max_size:                                6400
+plot_cluster_max_size:                            1600
+plot_std:                                         3.2
+
+# ==============================================================================
+target:
+  Control vs Metformin:
+    0 0 0 1 1 1 -1
+
+# ==============================================================================
+n_job:                                            6
+
+# ==============================================================================
+n_extreme:                                        32
+n_sampling:                                       10
+n_permutation:                                    10
 
 # ==============================================================================
 genes_to_peek:
@@ -85,14 +81,51 @@ genes_to_peek:
   - SPHK1
   - TRPM7
   - UCKL1
-  
-# ==============================================================================
-gene_sets_to_peek:
-  - HALLMARK_ANGIOGENESIS
-  - HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION
-  - HALLMARK_TNFA_SIGNALING_VIA_NFKB
 
 # ==============================================================================
-n_extreme:                                        32
-n_sampling:                                       10
-n_permutation:                                    10
+gene_set_file_paths:
+  - ../data/gene_set/c1.all.v6.2.symbols.gmt
+  - ../data/gene_set/c2.all.v6.2.symbols.gmt
+  - ../data/gene_set/c3.all.v6.2.symbols.gmt
+  - ../data/gene_set/c5.all.v6.2.symbols.gmt
+  - ../data/gene_set/c6.all.v6.2.symbols.gmt
+  - ../data/gene_set/c7.all.v6.2.symbols.gmt
+  - ../data/gene_set/h.all.v6.2.symbols.gmt
+  - ../data/gene_set/hippo_pathway.gmt
+  - ../data/gene_set/ipa_regulator.gmt
+  - ../data/gene_set/stem_cell.gmt
+  - ../data/gene_set/yap_signature.gmt
+
+# ==============================================================================
+gene_set_minimum_n:                               10
+gene_set_minimum_fraction:                        0.333
+
+# ==============================================================================
+gsea_statistic:                                   ks
+   
+# ==============================================================================
+gene_sets_to_peek:
+  - GO_POLY_PYRIMIDINE_TRACT_BINDING
+  - GO_PYRIMIDINE_CONTAINING_COMPOUND_BIOSYNTHETIC_PROCESS
+  - GO_PYRIMIDINE_CONTAINING_COMPOUND_CATABOLIC_PROCESS
+  - GO_PYRIMIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_CONTAINING_COMPOUND_SALVAGE
+  - GO_PYRIMIDINE_CONTAINING_COMPOUND_TRANSMEMBRANE_TRANSPORT
+  - GO_PYRIMIDINE_DEOXYRIBONUCLEOTIDE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOBASE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOSIDE_BIOSYNTHETIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOSIDE_CATABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOSIDE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOSIDE_MONOPHOSPHATE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOSIDE_TRIPHOSPHATE_BIOSYNTHETIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOSIDE_TRIPHOSPHATE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOTIDE_BIOSYNTHETIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOTIDE_CATABOLIC_PROCESS
+  - GO_PYRIMIDINE_NUCLEOTIDE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_RIBONUCLEOSIDE_CATABOLIC_PROCESS
+  - GO_PYRIMIDINE_RIBONUCLEOSIDE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_RIBONUCLEOSIDE_TRIPHOSPHATE_METABOLIC_PROCESS
+  - GO_PYRIMIDINE_RIBONUCLEOTIDE_METABOLIC_PROCESS
+  - KEGG_PYRIMIDINE_METABOLISM
+  - REACTOME_PYRIMIDINE_CATABOLISM
+  - REACTOME_PYRIMIDINE_METABOLISM
