@@ -11,6 +11,7 @@ def make_path_dict(setting):
         "kallisto/",
         "enst_x_sample.tsv",
         "gene_x_sample.tsv",
+        "gene_x_sample.processed.tsv",
         "target_x_sample.tsv",
         "find_differentially_expressed_gene/",
         "gene_set_x_information.tsv",

@@ -12,11 +12,11 @@ enst_gene_name_file_path:
 features_to_drop:
 samples_to_drop:
 nanize:
-drop_axis:
-max_na:
+drop_axis:                                        1
+max_na:                                           0
 min_n_not_na_unique_value:
-shift_as_necessary_to_achieve_min_before_logging:
-log_base:
+shift_as_necessary_to_achieve_min_before_logging: 0<
+log_base:                                         2
 normalization_axis:
 normalization_method:
 clip_min:
@@ -31,15 +31,15 @@ plot_std:                                         3
 
 # ==============================================================================
 target:
+  WT vs DB:
+    -1 -1 -1 -1 0 1 -1 -1
   WT vs Akita:
-    0 -1 1 -1 -1 -1 -1 -1
+    -1 -1 -1 -1 0 -1 1 -1
   WT vs MGP:
-    0 -1 -1 1 -1 -1 -1 -1
-  WT vs Young:
-    0 1 -1 -1 -1 -1 -1 -1
+    -1 -1 -1 -1 0 -1 -1 1
 
 # ==============================================================================
-n_job:                                            4
+n_job:                                            6
 
 # ==============================================================================
 n_extreme:                                        32
@@ -48,6 +48,23 @@ n_permutation:                                    0
 
 # ==============================================================================
 genes_to_peek:
+  - ABCG2
+  - BMI1
+  - CD34
+  - CD44
+  - CTNNB1
+  - EPAS1
+  - EZH2
+  - HIF1A
+  - KLF4
+  - MYC
+  - NANOG
+  - NES
+  - NOTCH1
+  - POU5F1
+  - PROM1
+  - SOX2
+  - ZFP42
 
 # ==============================================================================
 gene_set_file_paths:
@@ -72,3 +89,16 @@ gsea_statistic:                                   ks
 
 # ==============================================================================
 gene_sets_to_peek:
+  - HALLMARK_NOTCH_SIGNALING
+  - HALLMARK_TGF_BETA_SIGNALING
+  - HALLMARK_E2F_TARGETS
+  - HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION
+  - GOTZMANN_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_UP
+  - HALLMARK_WNT_BETA_CATENIN_SIGNALING
+  - BIOCARTA_WNT_PATHWAY
+  - HINATA_NFKB_TARGETS_KERATINOCYTE_UP
+  - TIAN_TNF_SIGNALING_VIA_NFKB
+  - BENPORATH_ES_CORE_NINE
+  - Cancer Stem Cell
+  - Normal Stem Cell
+  - Yamanaka Factors
