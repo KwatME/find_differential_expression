@@ -1,9 +1,11 @@
-from os import listdir
+from os.path import expanduser
 
 from ccal import establish_path
 
 
 def make_path_dict(setting):
+
+    output_directory_path = expanduser(setting["output_directory_path"])
 
     path_dict = {}
 
@@ -23,7 +25,7 @@ def make_path_dict(setting):
         "summarize/",
     ):
 
-        path_dict[name] = "{}/{}".format(setting["output_directory_path"], name)
+        path_dict[name] = "{}/{}".format(output_directory_path, name)
 
     for name, path in path_dict.items():
 
