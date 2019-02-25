@@ -31,15 +31,13 @@ plot_std:                                         3
 
 # ==============================================================================
 target:
-  # WT vs DB:
-  #   -1 -1 -1 -1 0 1 -1 -1
   WT vs MGP:
     -1 -1 -1 -1 0 -1 1 -1
   WT vs Akita:
     -1 -1 -1 -1 0 -1 -1 1
 
 # ==============================================================================
-n_job:                                            5
+n_job:                                            6
 
 # ==============================================================================
 n_extreme:                                        32
@@ -48,6 +46,11 @@ n_permutation:                                    0
 
 # ==============================================================================
 genes_to_peek:
+  # - BIOTIN
+  # - CY3_HYB
+  # - LABELING
+  # - LOW_STRINGENCY_HYB
+  # - NEGATIVE
   - MGLAP
   - NRG4
   - BMP4
@@ -74,18 +77,15 @@ gene_set_minimum_n:                               10
 gene_set_minimum_fraction:                        0.75
 
 # ==============================================================================
-gsea_statistic:                                   ks
+gsea_statistic:                                   auc
 
 # ==============================================================================
 gene_sets_to_peek:
   - HALLMARK_ADIPOGENESIS
   - GO_REGULATION_OF_BROWN_FAT_CELL_DIFFERENTIATION
   - HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION
-  - GOTZMANN_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_UP
   - HALLMARK_WNT_BETA_CATENIN_SIGNALING
-  - HINATA_NFKB_TARGETS_KERATINOCYTE_UP
   - TIAN_TNF_SIGNALING_VIA_NFKB
   - BENPORATH_ES_CORE_NINE
-  - Cancer Stem Cell
   - Normal Stem Cell
   - Yamanaka Factors
