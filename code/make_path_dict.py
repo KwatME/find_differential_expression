@@ -22,7 +22,7 @@ def make_path_dict(setting):
         "find_differentially_expressed_gene_set/",
         "compare_differentially_expressed_gene_set/",
         "expand_gene_set/",
-        "summarize/",
+        "summarize_gene_set/",
     ):
 
         path_dict[name] = "{}/{}".format(output_directory_path, name)

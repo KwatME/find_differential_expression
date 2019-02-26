@@ -1,5 +1,5 @@
-# Find Differential Expression
+# Match Pattern
 
-Find differential expression :fire:
+Match Pattern :sushi:
 
 Shareable Project powered by <https://spro.io>
