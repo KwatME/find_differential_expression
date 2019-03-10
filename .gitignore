@@ -33,7 +33,7 @@ environment/*
 # Additional rules.
 # ==============================================================================
 !data/gene_set
-!data/enst_gene_name.*.tsv
+!data/*_gene_name.tsv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
