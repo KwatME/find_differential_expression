@@ -1,11 +1,11 @@
-from os.path import expanduser
+from os import mkdir
 
-from ccal import establish_path
+from ccal import normalize_path
 
 
 def make_path_dict(setting):
 
-    output_directory_path = expanduser(setting["output_directory_path"])
+    output_directory_path = normalize_path(setting["output_directory_path"])
 
     path_dict = {}
 
@@ -31,12 +31,6 @@ def make_path_dict(setting):
 
         if name.endswith("/"):
 
-            path_type = "directory"
-
-        else:
-
-            path_type = "file"
-
-        establish_path(path, path_type)
+            mkdir(path)
 
     return path_dict
