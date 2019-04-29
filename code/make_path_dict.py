@@ -1,6 +1,6 @@
 from os import mkdir
 
-from ccal import normalize_path
+from kraft import normalize_path
 
 
 def make_path_dict(setting):
