@@ -1,4 +1,5 @@
 from os import mkdir
+from os.path import join
 
 from kraft import normalize_path
 
@@ -25,7 +26,7 @@ def make_path_dict(setting):
         "summarize_gene_set/",
     ):
 
-        path_dict[name] = "{}/{}".format(output_directory_path, name)
+        path_dict[name] = join(output_directory_path, name)
 
     for name, path in path_dict.items():
 
