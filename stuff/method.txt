@@ -1,0 +1,2 @@
+RNA sequencing produce paired-end FASTQ files, which store short cDNA sequences sequenced. Kallisto (https://pachterlab.github.io/kallisto/) map these sequences to human references transcriptome (ftp://ftp.ensembl.org/pub/release-95/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz) and compute transcript per million (TPM) for the reference transcripts. A gene's expression value is the maximum of the TPMs of its transcripts.
+This workflow is publicly available at https://github.com/KwatME/match_pattern.
