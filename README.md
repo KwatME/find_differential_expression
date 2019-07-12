@@ -1,6 +1,6 @@
 # Match Pattern
 
-Match Pattern :sushi:
+Workflow to match pattern :sushi:
 
 <br>
 
