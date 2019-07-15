@@ -1,4 +1,4 @@
-name: essence
+name: null
 channels:
   - conda-forge
   - defaults
