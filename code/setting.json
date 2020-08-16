@@ -7,8 +7,9 @@
   },
 
   "n_extreme": 16,
-  "n_sampling": 10,
-  "n_permutation": 10,
+  "n_sampling": 2,
+  "n_permutation": 2,
+  "plot_std": 4,
 
   "features_to_peek": ["SHH", "MYC", "NOTCH1", "F2RL1", "ST14", "XIST"],
   "samples_to_peek": [],
