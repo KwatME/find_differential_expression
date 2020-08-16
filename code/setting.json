@@ -1,7 +1,10 @@
 {
   "n_job": 8,
 
-  "sample_groups": {},
+  "comparisons": {
+    "NC vs NM": "0 0 0 1 1 1 _ _ _ _ _ _",
+    "WC vs WM": "_ _ _ _ _ _ 0 0 0 1 1 1"
+  },
 
   "n_extreme": 16,
   "n_sampling": 10,
