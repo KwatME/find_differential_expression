@@ -1,9 +1,10 @@
-from os.path import join
+import os
 
+import pandas as pd
 
 import kraft
 
-PROJECT = kraft.json.read("../project.json")
+SETTING = kraft.json.read("setting.json")
 
 PATH = {}
 
@@ -20,7 +21,7 @@ for name in (
     "summarize_gene_set/",
 ):
 
-    path = join(PROJECT["output/"], name)
+    path = os.path.join("../output/", name)
 
     kraft.path.path(path)
 

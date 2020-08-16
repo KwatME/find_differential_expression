@@ -4,32 +4,5 @@
   "download": {},
   "command": {
     "notebook": "jupyter lab"
-  },
-
-  "code/": "code/",
-  "environment/": "environment/",
-  "input/": "input/",
-  "output/": "output/",
-  "stuff/": "/stuff/",
-
-  "n_job": 8,
-
-  "sample_groups": {},
-
-  "n_extreme": 16,
-  "n_sampling": 10,
-  "n_permutation": 10,
-
-  "features_to_peek": ["SHH", "MYC", "NOTCH1", "F2RL1", "ST14", "XIST"],
-  "samples_to_peek": [],
-
-  "set_minimum_n": 10,
-  "set_minimum_fraction": 0.5,
-  "sea_function_name": "compute_log_ratio",
-
-  "sets_to_peek": [
-    "HALLMARK_ADIPOGENESIS",
-    "HALLMARK_ANGIOGENESIS",
-    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
-  ]
+  }
 }
