@@ -15,12 +15,12 @@
   "samples_to_peek": [],
 
   "set_n": 3,
-  "set_.": 0,
-  "sea_function": "get_log_ratio",
+  "set_.": 0.333,
+
+  "sea_feature_score": "get_log_ratio",
 
   "sets_to_peek": [
-    "HALLMARK_ADIPOGENESIS",
-    "HALLMARK_ANGIOGENESIS",
+    "YAP signature based on cell SCC2 Oral Cancer in paper Mol Cancer Res; 13(6) June 2015",
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
   ]
 }
