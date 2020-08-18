@@ -2,9 +2,10 @@
   "process": { "good_axis": 0, "min_good_unique_value": 2 },
 
   "comparisons": [
+    ["Unaffected", "Fatigue"],
+    ["Unaffected", "ICF"],
     ["Unaffected", "CFS"],
-    ["ICF", "CFS"],
-    ["Unaffected", "ICF"]
+    ["ICF", "CFS"]
   ],
 
   "n_job": 8,
