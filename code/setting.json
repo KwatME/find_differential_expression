@@ -1,26 +1,34 @@
 {
-  "n_job": 4,
+  "process": { "good_axis": 0, "min_good_unique_value": 2 },
+  "features_to_peek": ["CTGF", "CYR61"],
+
+  "sets_to_peek": [
+    "IPA_YAP1_UP",
+    "IPA_YAP1_DN",
+    "REACTOME_YAP1_AND_WWTR1_TAZ_STIMULATED_GENE_EXPRESSION",
+    "REACTOME_RUNX3_REGULATES_YAP1_MEDIATED_TRANSCRIPTION",
+    "YAP signature based on cell HEK293 in paper Cell 150, 780–791, August 17, 2012",
+    "YAP signature based on cell NIH3T3_MCD10A in paper GENES & DEVELOPMENT 22:1962–1971 2008",
+    "YAP signature based on cell SCC2 Oral Cancer in paper Mol Cancer Res; 13(6) June 2015",
+    "YAP signature based on mechanism",
+    "YAP1_DN",
+    "YAP1_UP",
+    "CORDENONSI_YAP_CONSERVED_SIGNATURE"
+  ],
+
+  "n_job": 8,
 
   "comparisons": {
-    "NC vs NM": "0 0 0 1 1 1 _ _ _ _ _ _",
-    "WC vs WM": "_ _ _ _ _ _ 0 0 0 1 1 1"
+    "Metformin Treatment": "0 0 0 1 1 1"
   },
 
   "n_extreme": 16,
-  "n_sampling": 2,
-  "n_permutation": 2,
+  "n_sampling": 10,
+  "n_permutation": 10,
   "plot_std": 4,
-
-  "features_to_peek": ["SHH", "MYC", "NOTCH1", "F2RL1", "ST14", "XIST"],
-  "samples_to_peek": [],
 
   "set_n": 3,
   "set_.": 0.333,
-  "set_feature_pattern": "",
-
-  "sets_to_peek": [
-    "YAP signature based on cell SCC2 Oral Cancer in paper Mol Cancer Res; 13(6) June 2015"
-  ],
 
   "sea_feature_score": "get_log_ratio"
 }
