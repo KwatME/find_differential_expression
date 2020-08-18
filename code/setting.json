@@ -19,7 +19,7 @@
 
   "sea_feature_score": "get_log_ratio",
 
-  "features_to_peek": [],
+  "features_to_peek": ["XIST"],
 
   "sets_to_peek": []
 }
