@@ -7,7 +7,7 @@
     ["Unaffected", "ICF"]
   ],
 
-  "n_job": 10,
+  "n_job": 8,
 
   "n_extreme": 16,
   "n_sampling": 10,
