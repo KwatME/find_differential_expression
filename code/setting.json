@@ -2,11 +2,12 @@
   "process": { "good_axis": 0, "min_good_unique_value": 2 },
 
   "comparisons": [
-    ["healthy control", "fibromyalgia"],
-    ["healthy control", "chronic fatigue syndrome"]
+    "diagnosis.fibromyalgia",
+    ["diagnosis.healthy control", "chronic fatigue syndrome.Yes"],
+    ["diagnosis.fibromyalgia", "chronic fatigue syndrome.Yes"]
   ],
 
-  "n_job": 2,
+  "n_job": 8,
 
   "n_extreme": 16,
   "n_sampling": 10,
