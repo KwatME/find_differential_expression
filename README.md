@@ -1,5 +1,15 @@
 # Compare
 
+Program for comparing.
+
+## Get
+
+Download this.
+
+## Use
+
+See [code](code).
+
 #
 
 [Shareable Project](https://github.com/kwatme/spro) powered by [Guardiome](https://guardiome.org)
