@@ -2,13 +2,11 @@
   "process": { "good_axis": 0, "min_good_unique_value": 2 },
 
   "comparisons": [
-    ["Unaffected", "Fatigue"],
-    ["Unaffected", "ICF"],
-    ["Unaffected", "CFS"],
-    ["ICF", "CFS"]
+    ["healthy control", "fibromyalgia"],
+    ["healthy control", "chronic fatigue syndrome"]
   ],
 
-  "n_job": 8,
+  "n_job": 2,
 
   "n_extreme": 16,
   "n_sampling": 10,
@@ -20,7 +18,7 @@
 
   "sea_feature_score": "get_log_ratio",
 
-  "features_to_peek": ["XIST"],
+  "features_to_peek": [],
 
   "sets_to_peek": []
 }
