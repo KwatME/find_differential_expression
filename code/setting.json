@@ -1,0 +1,30 @@
+{
+  "process": { "good_axis": 0, "min_good_unique_value": 2 },
+
+  "comparison_": [
+    "CFS",
+    "CD4",
+    [["CFS", "TA"], ["CFS", "CD4"]]
+  ],
+
+  "n_job": 8,
+
+  "n_extreme": 16,
+  "n_sample": 0,
+  "n_shuffle": 0,
+  "plot_std": 4,
+
+  "n_set": 3,
+  "._set": 0.9,
+
+  "score_for_scoring_set": "get_ic",
+
+  "peek_feature_": ["CD4"],
+
+  "peek_set_": [
+      "HP_APNEIC_EPISODES_PRECIPITATED_BY_ILLNESS_FATIGUE_STRESS",
+      "HP_EXERCISE_INDUCED_MUSCLE_FATIGUE",
+      "HP_FATIGUE",
+      "HP_CHRONIC_FATIGUE"
+  ]
+}
