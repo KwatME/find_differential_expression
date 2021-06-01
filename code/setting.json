@@ -1,15 +1,15 @@
 {
-  "process": {
-    "drop_axis": 0,
-    "drop_not_na_min_n": 8,
-    "drop_not_na_unique_min_n": 2,
-    "log_shift_minimum": 1,
-    "log_base": 2,
-    "normalize_axis": 0,
-    "normalize_method": "-0-"
+  "pr": {
+    "axdr": 0,
+    "n_no": 8,
+    "n_un": 2,
+    "lo": 2,
+    "mish": 1,
+    "me": "-0-",
+    "axno": 0
   },
 
-  "comparison_": [
+  "co_": [
     "CFS",
     "CD4",
     [
@@ -18,21 +18,21 @@
     ]
   ],
 
-  "n_job": 12,
+  "n_jo": 10,
 
-  "n_extreme": 16,
-  "n_sample": 10,
-  "n_shuffle": 10,
-  "plot_std": 4,
+  "n_ex": 16,
+  "n_sa": 10,
+  "n_sh": 10,
+  "st": 4,
 
-  "n_set": 3,
-  "._set": 0.9,
+  "n_ge": 3,
+  "._ge": 0.9,
 
-  "score_for_scoring_set": "get_ic",
+  "sc": "get_ic",
 
-  "peek_feature_": ["CD4"],
+  "fe_": ["CD4"],
 
-  "peek_set_": [
+  "se_": [
     "HP_APNEIC_EPISODES_PRECIPITATED_BY_ILLNESS_FATIGUE_STRESS",
     "HP_EXERCISE_INDUCED_MUSCLE_FATIGUE",
     "HP_FATIGUE",

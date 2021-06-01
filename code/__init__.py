@@ -1,12 +1,9 @@
 import os
 import re
 
+import kraft
 import numpy as np
 import pandas as pd
-from plot_peek import (
-    plot_peek,
-)
+from plot_peek import plot_peek
 
-import kraft
-
-S = kraft.json.read("setting.json")
+SETTING = kraft.json.read("setting.json")
