@@ -1,0 +1,31 @@
+{
+  "pr": {
+    "axdr": 0,
+    "n_no": 8,
+    "n_un": 2,
+    "lo": 2,
+    "mish": 1,
+    "me": "-0-",
+    "axno": 0
+  },
+
+  "co_": [],
+
+  "n_jo": 1,
+
+  "n_ex": 8,
+  "n_sa": 10,
+  "n_sh": 10,
+  "st": 3.2,
+
+  "n_ge": 3,
+  "._ge": 0.9,
+
+  "sc": "get_ic",
+
+  "fe_": ["XIST"],
+
+  "se_": ["HALLMARK_MYC_TARGETS_V2"],
+
+  "su_": []
+}
