@@ -23,7 +23,7 @@
   "n_ex": 16,
   "n_sa": 10,
   "n_sh": 10,
-  "st": 4,
+  "st": 3.2,
 
   "n_ge": 3,
   "._ge": 0.9,
@@ -39,5 +39,35 @@
     "HP_CHRONIC_FATIGUE",
     "CD4+ in Celiac Disease 1",
     "CD4+ in Celiac Disease 2"
+  ],
+
+  "su_": [
+    {
+      "CFS Signatures": ["HP_CHRONIC_FATIGUE"]
+    },
+    {
+      "CD4 Gene Expression": ["CD4"],
+      "Naive CD4 Signature": [
+        "GSE22886_NAIVE_CD4_TCELL_VS_DC_UP",
+        "GSE11057_NAIVE_CD4_VS_PBMC_CD4_TCELL_UP",
+        "GOCC_T_CELL_RECEPTOR_COMPLEX"
+      ],
+      "CD4 Signatures from the Celiac Disease Paper": [
+        "CD4+ in Celiac Disease 1",
+        "CD4+ in Celiac Disease 2"
+      ]
+    },
+    {
+      "CD4 Gene Expression": ["CD4"],
+      "CD4 Signature": [
+        "GSE22886_NAIVE_CD4_TCELL_VS_DC_UP",
+        "GSE11057_NAIVE_CD4_VS_PBMC_CD4_TCELL_UP",
+        "GOCC_T_CELL_RECEPTOR_COMPLEX"
+      ],
+      "CD4 Signatures from the Celiac Disease Paper": [
+        "CD4+ in Celiac Disease 1",
+        "CD4+ in Celiac Disease 2"
+      ]
+    }
   ]
 }
