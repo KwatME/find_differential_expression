@@ -1,6 +1,5 @@
-from numpy import arange, where
-
 from kraft.plot import plot_point
+from numpy import arange, where
 
 
 def plot_peek(se, la_, pa):
